@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gp.css">
+    <title>Travel and Tourism</title>
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class='bx bxl-trip-advisor'></i>Advenzy</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div> <!--menu icon-->
+        <!--Nav list-->
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#Map" >Location</a></li>
+            <li><a href="#Splitter" >Splitter</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Customer">Customer</a></li>
+            
+        </ul>
+        <div class="profile">
+            <img src="data:image/png;base64,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" alt="">
+            <span>Name</span>
+            <i class='bx bxs-caret-down-circle' ></i>
+
+        </div>
+
+
+    </header>
+    <!--home-->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <!-- sliide 1-->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                
+                <h1 style="color: rgb(179, 128, 80);text-align: center; padding-bottom: 100px;">TRAVEL AROUND</h1>
+                
+                <a href="#" class="btn="><img src="./aaron-burden-NXt5PrOb_7U-unsplash.jpg" alt=""><i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="./aaron-burden-NXt5PrOb_7U-unsplash.jpg" alt="">
+                
+
+
+            </div>
+           <!--2nd slide-->
+           <div class="swiper-slide container">
+            <div class="home-text">
+            
+            <h1 style="color: white; text-align: end;">Choose loction </h1>
+            <a href="#" class="btn=">Explore Now <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <img src="luca-bravo-O453M2Liufs-unsplash.jpg" alt="">
+           </div>
+            <!--3rd slide-->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                <span>Travel around</span>
+                <h1>Choose loction <br> Set ur amt <br> Browse ur food</h1>
+                <a href="#" class="btn=">Explore Now <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="./mantas-hesthaven-_g1WdcKcV3w-unsplash.jpg" alt="">
+
+
+            </div>
+            
+
+
+
+        </div>
+
+            
+        </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          
+    </section> 
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  
+    <!--Link to JS-->
+    <script src="hm.js"></script>
+    
+</body>
+</html>
